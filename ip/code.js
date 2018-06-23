@@ -1,5 +1,5 @@
 
-function getIP(json) {
-    $("#ip1").html(json.ip);
+function callback(json) {
+    $("#ip1").html(json["ip"]);
   }
 
