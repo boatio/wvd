@@ -1,2 +1,2 @@
-$("#ip1").html(ip());
+$("#ip1").html(json.ip);
 
