@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boat OS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="os.css"/>
+</head>
+<body>
+    <div id="option">
+        <select id="chooseoption"> 
+            <option selected>선 그래프</option> 
+            <option>라인 그래프</option> 
+            <option>원 그래프</option> 
+        </select>
+        <br><br>
+        <textarea id="chartdata"class="data" placeholder="Chart Data" rows=7px; cols=22px;></textarea>
+        <br>
+        <textarea id="labelsdata"class="data" placeholder="Labels" rows=7px; cols=22px;></textarea>
+        <br>
+        <input type="text" id="label" placeholder="Title"/>
+        <br>
+        <input type="text" id="color" placeholder="겉 색깔"/>
+        <br>
+        <input type="text" id="color2" placeholder="안 색깔"/>
+        <br>
+        <button class="button button5" onclick="helloworld()">그래프 생성</button>
+    </div>
+    <div id="L_pg">
+        <canvas id="myChart" width="1230" height="700">
+
+
+        </canvas>
+    </div>
+    <script src="baot.js"></script>
+
+</body>
+</html>
