@@ -1,41 +1,38 @@
-<html>
-    <head>
-        <title>MY IP</title>
-    </head>
-
-    <meta name="keywords" content="내 아이피,아이피,아이피 주소,아이피 주소 보는 법,내 아이피 주소">
-    <meta name="description" content="WVD에서 제작 한 NOW IP 입니다">
-    <meta name="author" content="WVD">
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>내 아이피</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style>
-    .jumbotron{
-        background-color: mediumaquamarine;
-        height: 600px;
+    html, body {
+      position: absolute;
+      height: 100%;
+      width:100%;
     }
-    #ip1{
-        color:grey
+    .jumbotron{
+        background-color:lightblue;
+        text-align: center;
+        height:100%;
+        width:100%;
     }
     </style>
-    
-    <body>
 
-        <div class="jumbotron text-center">
-                <br>
-                <br>
-                <br>
-            <h1>내 아이피는</h1><br>
-            <h1 id="ip1">Loading</h1><br>
-            <h1>입니다</h1>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1><strong>당신의 아이피는</strong></h1><br>
+        <br><br><br>
+        <br>
+        <div id="ip">
+                <h1><strong>로딩 중..</strong></h1>
         </div>
-        <div class="text-center">
-            <h5>Now ip는 사용자의 개인정보(ip)를 저장하지 않습니다<br>
-                copyright ~~ Powerd by WVD
-
-            </h5>
-        </div>
-        <script src="code.js"></script>
-        <script type="application/javascript" src="https://api.ipify.org/?format=jsonp&boat.js"></script> 
-    </body>
+    </div>
+    <script>
+    function bip(data){
+        document.getElementById("ip").innerHTML = '<h1 style="font-size:100px; color:lightseagreen;">'+data+'</h1>';
+    }
+    </script>
+    <script src="http://boat64.zz.am/bip.php"></script>
+</body>
 </html>
